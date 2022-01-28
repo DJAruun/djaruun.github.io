@@ -21,6 +21,28 @@ body {color: white;}
 body {font-size: 2vw;}
 p {margin: 2.5vw;}
 
+/*  BACK TO TOP BUTTON  */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 1vw;
+  right: 1.5vw;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 1vw;
+  transition: all ease-out 0.075s;
+}
+
+#myBtn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 /*  NAVBAR TEXT ATTRIBUTES  */
 .NavBar li{
   font-size:1.3vw;
@@ -110,10 +132,6 @@ li a.active {
 
 <!--  BACK TO TOP BUTTON  -->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-<div style="background-color:black;color:white;padding:30px">Scroll Down</div>
-<div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible 
-  <strong>when the user starts to scroll the page</strong>.</div>
 
 <script>
 //Get the button
