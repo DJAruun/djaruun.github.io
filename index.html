@@ -2,6 +2,8 @@
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="icon" type="image/x-icon" href="20211215_150955.png">
 
 <!--GOOGLE FONTS-->
@@ -106,11 +108,35 @@ li a.active {
 </head>
 <body>
 
-<!--<div class="container">
-  <img src="trombone-close-up-trombone-image-music-image-music-store3.png" style="width:100%;">
-  <div class="centered"><p style="font-size: 65px;"><strong>Aron Jacobson</strong></p>
-    <p style="margin-top: -40px; color:rgba(230, 230, 230); font-size: 32px;">Spelar på olika sätt</p></div>
-</div>-->
+<!--  BACK TO TOP BUTTON  -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+<div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible 
+  <strong>when the user starts to scroll the page</strong>.</div>
+  
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+  
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+  
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+  
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 <!--  NAVBAR  -->  
 <ul class="NavBar" id="NavBar">    
   <a class="navbar-brand" href="/">
