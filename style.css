@@ -1,0 +1,292 @@
+/*#region OTHER PROPERTIES */
+* {
+  box-sizing: border-box
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/*#endregion*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*#region DEFAULT PROPERTIES */
+/*  BODY DEFAULT PROPERTIES  */
+body {
+  margin: 0px; 
+  padding: 0px; 
+  background-color: orange; 
+  color: white; 
+  font-size: 24px; 
+  position: relative;
+}
+
+/*  HEADER 1 DEFAULT PROPERTIES  */
+h1 {
+  margin: 8px; 
+  font-family: "Syncopate", sans-serif; 
+  font-weight: 600; 
+  font-variant: small-caps;
+}
+
+/*  PARAGRAPH DEFAULT PROPERTIES  */
+p {
+  margin: 8px; 
+  font-family: "Montserrat", sans-serif;
+}
+/*#endregion*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*#region RESPONSIVE NAVBAR */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, .55);
+  position: sticky; 
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(12.5px);
+  z-index: 500;
+  font-size:17px;
+  font-family: "Numans", sans-serif;
+  box-shadow: 0px 3.84px 6.4px 0px rgba(0, 0, 0, .3);
+  overflow: hidden;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, .6);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  width: 25%; /*  100/THE NUMBER OF BUTTONS IN NAVBAR  */
+}
+
+.navbar a:hover {
+  color: rgb(224, 224, 224);
+}
+
+.navbar a.active {
+  color: rgb(255, 255, 255);
+}
+
+.navbar .icon {
+  display: none;
+}
+
+/*  MOBILE DETECTION AND STUFF  */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: fixed;}
+  .navbar.responsive .icon {
+    position: static;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+/*#endregion*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*#region HEADER */
+.Header {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+/*#endregion*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*#region TEXT CENTERED IN IMAGE */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.349) 2px 2px 4px;
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*#endregion*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*#region BACK TO TOP BUTTON [DISABLED] */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 12px;
+  right: 19px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, .25);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  padding: 14px 21px;
+  border-radius: 12.8px;
+  transition: all ease-out .075s;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 3.84px 6.4px 0px rgba(0, 0, 0, .3);
+}
+
+#myBtn:hover {
+  background-color: rgba(0, 0, 0, .2);
+  color: rgba(255, 255, 255, 1);
+}
+/*#endregion*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*#region TEXT SELECTION COLOR */
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: rgba(0, 0, 0, .2);
+}
+
+::selection { /* Code for other browsers */
+  color: white;
+  background: rgba(0, 0, 0, .2);
+}
+/*#endregion*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*#region CUSTOM AUDIO PLAYER */
+.audio-player {
+  height: 50px;
+  width: 350px;
+  background: #444;
+  box-shadow: 0 0 20px 0 #000a;
+  font-family: arial;
+  color: white;
+  font-size: 0.75em;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 6px auto;
+}
+.audio-player .timeline {
+  background: white;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 10px 0 #0008;
+}
+.audio-player .timeline .progress {
+  background: coral;
+  width: 0%;
+  height: 100%;
+  transition: 0.25s;
+}
+.audio-player .controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 20px;
+}
+.audio-player .controls > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.audio-player .controls .toggle-play.play {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid #0000;
+  border-left: 13px solid white;
+}
+.audio-player .controls .toggle-play.play:hover {
+  transform: scale(1.1);
+}
+.audio-player .controls .toggle-play.pause {
+  height: 15px;
+  width: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.audio-player .controls .toggle-play.pause:before {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background: white;
+  content: "";
+  height: 15px;
+  width: 3px;
+}
+.audio-player .controls .toggle-play.pause:after {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  background: white;
+  content: "";
+  height: 15px;
+  width: 3px;
+}
+.audio-player .controls .toggle-play.pause:hover {
+  transform: scale(1.1);
+}
+.audio-player .controls .time {
+  display: flex;
+}
+.audio-player .controls .time > * {
+  padding: 2px;
+}
+.audio-player .controls .volume-container {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+.audio-player .controls .volume-container .volume-button {
+  height: 26px;
+  display: flex;
+  align-items: center;
+}
+.audio-player .controls .volume-container .volume-button .volume {
+  transform: scale(0.7);
+}
+.audio-player .controls .volume-container .volume-slider {
+  position: absolute;
+  left: -3px;
+  top: 15px;
+  z-index: -1;
+  width: 0;
+  height: 15px;
+  background: white;
+  box-shadow: 0 0 20px #000a;
+  transition: 0.25s;
+}
+.audio-player .controls .volume-container .volume-slider .volume-percentage {
+  background: coral;
+  height: 100%;
+  width: 75%;
+}
+.audio-player .controls .volume-container:hover .volume-slider {
+  left: -123px;
+  width: 120px;
+}
+/*#endregion*/
