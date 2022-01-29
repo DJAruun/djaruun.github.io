@@ -15,38 +15,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
+* {box-sizing: border-box}
+html {scroll-behavior: smooth;}
 body {margin: 0px; padding: 0px;}
 body {background-color: rgb(18, 18, 18);}
-html {scroll-behavior: smooth;}
 body {font-family: "Montserrat", sans-serif;}
 body {color: white;}
 body {font-size: 24px;}
-* {box-sizing: border-box}
 p {margin: 32px;}
-
-/*  BACK TO TOP BUTTON  */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 12.8px;
-  right: 19.2px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: rgba(128, 128, 128, .15);
-  color: rgb(255, 255, 255, .4);
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 12.8px;
-  transition: all ease-out .075s;
-  backdrop-filter: blur(10px);
-}
-
-#myBtn:hover {
-  background-color: rgba(128, 128, 128, .25);
-  color: rgba(255, 255, 255, 1);
-}
 
 /*  NAVBAR  */
 .navbar {
@@ -84,11 +60,29 @@ p {margin: 32px;}
   color: rgba(255, 255, 255, 1);
 }
 
-@media screen and (max-width: 500px) {
-  .navbar a {
+.navbar .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
     float: none;
     display: block;
-    width: 100%;
     text-align: left;
   }
 }
@@ -117,6 +111,30 @@ p {margin: 32px;}
   transform: translate(-50%, -50%);
 }
 
+/*  BACK TO TOP BUTTON  */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 12.8px;
+  right: 19.2px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(128, 128, 128, .15);
+  color: rgb(255, 255, 255, .4);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 12.8px;
+  transition: all ease-out .075s;
+  backdrop-filter: blur(10px);
+}
+
+#myBtn:hover {
+  background-color: rgba(128, 128, 128, .25);
+  color: rgba(255, 255, 255, 1);
+}
+
 </style>
 </head>
 <body>
@@ -125,6 +143,7 @@ p {margin: 32px;}
 <button onclick="topFunction()" id="myBtn" title="Gå till toppen"><i class="fa fa-arrow-up"></i></button>
 
 <script>
+//---  BACK TO TOP BUTTON  ---//
 //Get the button
 var mybutton = document.getElementById("myBtn");
   
@@ -144,16 +163,29 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//---  MOBILE NAVBAR  ---//
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 </script>
 
 
 <!--  NAVBAR  -->  
-<nav class="navbar">
+<div class="navbar" id="myNavbar">
   <a onclick="topFunction()" style="cursor: pointer;"><i class="fa fa-home"></i> Start</a> <!--  class="active"  -->
   <a href="#P1"><i class="fa fa-music"></i> Portfolio</a> 
   <a href="#P2"><i class="fa fa-envelope"></i> Kontakta</a>
   <a href="#P3"><i class="fa fa-info"></i> Om</a>
-</nav>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 <!--  TITLE IMAGE  -->
 <div class="container">
