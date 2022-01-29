@@ -48,6 +48,7 @@ p {margin: 32px;}
   color: rgba(255, 255, 255, 1);
 }
 
+/*  NAVBAR  */
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -69,7 +70,7 @@ p {margin: 32px;}
   padding: 16px;
   color: rgba(255, 255, 255, .6);
   text-decoration: none;
-  width: 25%; /* Four links of equal widths */
+  width: 25%; /*  100 / THE NUMBER OF BUTTONS IN NAVBAR  */
   text-align: center;
   transition: all ease-out .075s;
   display: block;
@@ -92,12 +93,14 @@ p {margin: 32px;}
   }
 }
 
+/*  HEADER  */
 .Header {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
+/*  TEXT CENTERED IN IMAGE  */
 .container {
   position: relative;
   text-align: center;
@@ -112,13 +115,6 @@ p {margin: 32px;}
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-#navbar img {
-  display: inline-block;
-  width: 12.5%;
-  height: 12.5%;
-  margin: auto;
 }
 
 </style>
@@ -153,19 +149,15 @@ function topFunction() {
 
 <!--  NAVBAR  -->  
 <nav class="navbar">
-  
-  <a class="active" href="index copy.html"><i class="fa fa-home"></i> Start</a> 
-  
+  <a onclick="topFunction()" style="cursor: pointer;"><i class="fa fa-home"></i> Start</a> <!--  class="active"  -->
   <a href="#P1"><i class="fa fa-music"></i> Portfolio</a> 
-
   <a href="#P2"><i class="fa fa-envelope"></i> Kontakta</a>
-  
   <a href="#P3"><i class="fa fa-info"></i> Om</a>
 </nav>
 
 <!--  TITLE IMAGE  -->
 <div class="container">
-  <img src="trombone-close-up-trombone-image-music-image-music-store4.png" style="width:100%;">
+  <img src="trombone-close-up-trombone-image-music-image-music-store4.png" style="width: 100%;">
   <div class="centered"><p style="font-size: 90px; margin: 0px;"><strong>DJAruun</strong></p>
     <p style="margin: 0px; color:rgba(230, 230, 230); font-size: 32px;">Spelar på olika sätt</p></div>
 </div>
