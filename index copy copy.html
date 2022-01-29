@@ -48,7 +48,28 @@ p {margin: 32px;}
   color: rgba(255, 255, 255, 1);
 }
 
-.navbar {
+/*  NAVBAR TEXT ATTRIBUTES  */
+.NavBar li{
+  font-size:16.64px;
+  font-family: "Numans", sans-serif;
+}
+
+/*  NAVBAR SHADOW  */
+#NavBar {
+  box-shadow: 0px 3.84px 6.4px 0px rgba(0, 0, 0, .3);
+}
+
+@media screen and (max-width: 500px) {
+  .NavBar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*  NAVBAR ATTRIBUTES  */
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -57,39 +78,35 @@ p {margin: 32px;}
   position: sticky; 
   top: 0;
   width: 100%;
-  backdrop-filter: blur(12.5px);
+  backdrop-filter: blur(10px);
   z-index: 500;
-  font-size:16.64px;
-  font-family: "Numans", sans-serif;
-  box-shadow: 0px 3.84px 6.4px 0px rgba(0, 0, 0, .3);
 }
-
-.navbar a {
+    
+li {
   float: left;
-  padding: 16px;
-  color: rgba(255, 255, 255, .6);
-  text-decoration: none;
-  width: 25%; /* Four links of equal widths */
-  text-align: center;
-  transition: all ease-out .075s;
+}
+
+li a {
   display: block;
+  color: rgba(255, 255, 255, .6);
+  text-align: center;
+  /*  LAST NUMBER IS WIDTH OF NAVBAR BUTTONS  */
+  padding: 16px 85px;
+  font-size: 100%;
+  text-decoration: none;
+  transition: all ease-out .075s;
+  transform: scale(1.025); 
 }
 
-.navbar a:hover {
+li a:hover:not(.active) {
+  font-size: 100%;
   color: rgba(255, 255, 255, 1);
+  transform: scale(1.025); 
 }
 
-.navbar a.active {
+li a.active {
   color: rgba(255, 255, 255, 1);
-}
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+  transform: scale(1.025);
 }
 
 .Header {
@@ -114,11 +131,12 @@ p {margin: 32px;}
   transform: translate(-50%, -50%);
 }
 
-#navbar img {
-  display: inline-block;
-  width: 12.5%;
-  height: 12.5%;
-  margin: auto;
+/*  NAVBAR LOGO  */
+.logo-image {
+  margin-left: 578px;
+  margin-top: -7px; /*  -.78 or -.5  */
+  position: absolute;
+  opacity: 1;
 }
 
 </style>
@@ -150,18 +168,20 @@ function topFunction() {
 }
 </script>
 
-
 <!--  NAVBAR  -->  
-<nav class="navbar">
-  
-  <a class="active" href="index copy.html"><i class="fa fa-home"></i> Start</a> 
-  
-  <a href="#P1"><i class="fa fa-music"></i> Portfolio</a> 
-
-  <a href="#P2"><i class="fa fa-envelope"></i> Kontakta</a>
-  
-  <a href="#P3"><i class="fa fa-info"></i> Om</a>
-</nav>
+<ul class="NavBar" id="NavBar">    
+  <a class="navbar-brand" href="/">
+    <div class="logo-image">
+          <img src="20220115_203833.png" style="width:128px;">
+    </div>
+</a> 
+  <li><a class="active" href="index.html"><i class="fa fa-home"></i> Start</a></li>
+  <li><a href="#P1"><i class="fa fa-music"></i> Portfolio</a></li>
+  <!--  SPACING-TEXT FOR LOGO  -->
+  <li><a style="opacity: 0;" href="index.html">NNNNNNNNI</a></li>
+  <li><a href="#P2"><i class="fa fa-envelope"></i> Kontakta</a></li>
+  <li><a href="#P3"><i class="fa fa-info"></i> Om</a></li>
+</ul>
 
 <!--  TITLE IMAGE  -->
 <div class="container">
