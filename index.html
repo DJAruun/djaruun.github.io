@@ -41,7 +41,7 @@ p {margin: 32px;} /*  64px  */
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, .825);
+  background-color: rgba(0, 0, 0, .65);
   position: sticky; 
   top: 0;
   width: 100%;
@@ -62,6 +62,7 @@ p {margin: 32px;} /*  64px  */
   text-decoration: none;
   width: 25%; /*  100/THE NUMBER OF BUTTONS IN NAVBAR  */
   transition: all ease-out .075s;
+  
 }
 
 .navbar a:hover {
@@ -69,7 +70,7 @@ p {margin: 32px;} /*  64px  */
 }
 
 .navbar a.active {
-  color: rgb(0, 224, 140);
+  color: rgb(255, 255, 255);
 }
 
 .navbar .icon {
@@ -86,7 +87,7 @@ p {margin: 32px;} /*  64px  */
 }
 
 @media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {position: sticky;}
   .navbar.responsive .icon {
     position: absolute;
     right: 0;
@@ -164,7 +165,7 @@ p {margin: 32px;} /*  64px  */
 
 <script>
 
-//---  BACK TO TOP BUTTON  ---//
+//---  BACK TO TOP BUTTON  [DISABLED]  ---//
 //Get the button
 var mybutton = document.getElementById("myBtn");
   
@@ -208,42 +209,38 @@ function myFunction() {
 </div>
 
 <!--  TITLE IMAGE  -->
-<div class="container" id="section0">
+<div class="container">
   <img src="trombone-close-up-trombone-image-music-image-music-store4.png" style="width: 100%;">
   <div class="centered"><p style="font-size: 90px; margin: 40px;"><strong>DJAruun</strong></p>
     <p style="margin: 40px; color:rgba(230, 230, 230); font-size: 28px;">Plays in different ways</p></div>
 </div>
 
-<div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+<div id="section0" style="padding:100px 20px; background-color: orange;">
+  <h1>Start</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+<div id="section1" style="padding:100px 20px; background-color: dodgerblue;">
   <h1>Portfolio</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
 
-<div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+<div id="section2" style="padding:100px 20px; background-color:mediumseagreen;">
   <h1>Contact</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
 
-<div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+<div id="section3" style="padding:100px 20px; background-color: orangered;">
   <h1>About</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
