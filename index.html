@@ -65,7 +65,7 @@ p {margin: 32px;} /*  64px  */
 }
 
 .navbar a:hover {
-  color: rgb(0, 224, 140);
+  color: rgb(224, 224, 224);
 }
 
 .navbar a.active {
@@ -129,7 +129,7 @@ p {margin: 32px;} /*  64px  */
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*  BACK TO TOP BUTTON  */
+/*  BACK TO TOP BUTTON [DISABLED]  */
 #myBtn {
   display: none;
   position: fixed;
@@ -200,7 +200,7 @@ function myFunction() {
 
 <!--  NAVBAR  -->  
 <div class="navbar" id="myNavbar">
-  <a onclick="topFunction()" style="cursor: pointer;"><i class="fa-solid fa-house"></i> Start</a>
+  <a class="nav-link" href="#section0"><i class="fa-solid fa-house"></i> Start</a>
   <a class="nav-link" href="#section1"><i class="fa-solid fa-photo-film"></i> Portfolio</a> 
   <a class="nav-link" href="#section2"><i class="fa-solid fa-envelope"></i> Contact</a>
   <a class="nav-link" href="#section3"><i class="fa-solid fa-info"></i> About</a>
@@ -208,7 +208,7 @@ function myFunction() {
 </div>
 
 <!--  TITLE IMAGE  -->
-<div class="container">
+<div class="container" id="section0">
   <img src="trombone-close-up-trombone-image-music-image-music-store4.png" style="width: 100%;">
   <div class="centered"><p style="font-size: 90px; margin: 40px;"><strong>DJAruun</strong></p>
     <p style="margin: 40px; color:rgba(230, 230, 230); font-size: 28px;">Plays in different ways</p></div>
