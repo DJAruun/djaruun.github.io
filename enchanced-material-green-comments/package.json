@@ -1,0 +1,21 @@
+{
+    "name": "enchanced-material-green-comments",
+    "displayName": "Enchanced Material Green Comments",
+    "description": "A fork of Enhanced Material theme made by c0ldf1re",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Enchanced Material Theme Fork (Green Comments)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Enchanced Material Theme Fork (Green Comments)-color-theme.json"
+            }
+        ]
+    }
+}
