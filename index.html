@@ -8,7 +8,7 @@
 
 <link rel="icon" type="image/x-icon" href="20211215_150955.png">
 
-<!--GOOGLE FONTS-->
+<!--  GOOGLE FONTS  -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Numans">  
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">     
 
@@ -24,12 +24,13 @@ body {color: white;}
 body {font-size: 24px;}
 p {margin: 32px;}
 
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 /*  NAVBAR  */
 .navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: rgba(0, 0, 0, .825);
   position: sticky; 
   top: 0;
@@ -39,17 +40,18 @@ p {margin: 32px;}
   font-size:16.64px;
   font-family: "Numans", sans-serif;
   box-shadow: 0px 3.84px 6.4px 0px rgba(0, 0, 0, .3);
+  overflow: hidden;
 }
 
 .navbar a {
   float: left;
-  padding: 16px;
-  color: rgba(255, 255, 255, .6);
-  text-decoration: none;
-  width: 25%; /*  100 / THE NUMBER OF BUTTONS IN NAVBAR  */
-  text-align: center;
-  transition: all ease-out .075s;
   display: block;
+  color: rgba(255, 255, 255, .6);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  width: 25%; /*  100/THE NUMBER OF BUTTONS IN NAVBAR  */
+  transition: all ease-out .075s;
 }
 
 .navbar a:hover {
@@ -64,7 +66,7 @@ p {margin: 32px;}
   display: none;
 }
 
-
+/*  MOBILE DETECTION AND STUFF  */
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
@@ -87,12 +89,16 @@ p {margin: 32px;}
   }
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 /*  HEADER  */
 .Header {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*  TEXT CENTERED IN IMAGE  */
 .container {
@@ -110,6 +116,8 @@ p {margin: 32px;}
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*  BACK TO TOP BUTTON  */
 #myBtn {
@@ -143,6 +151,7 @@ p {margin: 32px;}
 <button onclick="topFunction()" id="myBtn" title="Gå till toppen"><i class="fa fa-arrow-up"></i></button>
 
 <script>
+
 //---  BACK TO TOP BUTTON  ---//
 //Get the button
 var mybutton = document.getElementById("myBtn");
@@ -164,13 +173,15 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
 //---  MOBILE NAVBAR  ---//
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "navbar") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "navbar";
   }
 }
 </script>
