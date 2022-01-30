@@ -36,41 +36,7 @@
 <button onclick="topFunction()" id="myBtn"><i class="fa-solid fa-arrow-up"></i></button>
 -->
 
-<script>
-
-//---  BACK TO TOP BUTTON  [DISABLED]  ---//
-//Get the button
-var mybutton = document.getElementById("myBtn");
-  
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-  
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-  
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
-//---  MOBILE NAVBAR  ---//
-function myFunction() {
-  var x = document.getElementById("myNavbar");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
-}
-</script>
+<script type="text/javascript" src="script.js"></script>
 
 <!--  NAVBAR  -->  
 <div class="navbar" id="myNavbar">
@@ -89,35 +55,52 @@ function myFunction() {
 </div>
 -->
 
+<!--#region  START SECTION  -->
 <div id="section0" style="padding:100px 20px; background-color: orange;">
   <h1>DJAruun</h1>
   <p>A man of many hobbies. </p>
 </div>
 
-<div id="section1" style="padding:100px 20px; background-color: dodgerblue;">
+
+<!--#endregion-->
+
+<!--#region  PORTFOLIO SECTION  -->
+<div id="section1" style="padding: 100px 20px; background-color: dodgerblue;">
   <h1>Portfolio</h1>
-  <p>My music and other projects.</p>
+  <p>My music and other projects.<br>⠀</p>
   
-  <audio class="audioplayer" controls>
-    <source src="horse.ogg" type="audio/ogg">
-    <source src="horse.mp3" type="audio/mpeg">
+  <!--#region  [Song] Future Bad  -->
+  <div style="padding: 20px 20px; width: fit-content; background-color: white; border-radius: 15px; box-shadow: 0px 3.84px 6.4px 0px rgba(0, 0, 0, .3);">
+  <h2 style="color: black;">DJAruun - Future Bad</h2>
+  <audio controls>
+    <source src="media\future bass 23.wav" type="audio/wav">
   Your browser does not support the audio element.
   </audio>
+  </div>
+  <!--#endregion-->
 
-  
 </div>
 
 
+<!--#endregion-->
 
+<!--#region  CONTACT SECTION  -->
 <div id="section2" style="padding:100px 20px; background-color:mediumseagreen;">
   <h1>Contact</h1>
   <p></p>
 </div>
 
+
+<!--#endregion-->
+
+<!--#region  ABOUT SECTION  -->
 <div id="section3" style="padding:100px 20px; background-color: orangered;">
   <h1>About</h1>
   <p></p>
 </div>
+
+
+<!--#endregion-->
 
 </body>
 </html>
