@@ -1,2 +1,2 @@
 # A personal website
-[Link to website](www.djaruun.github.io/)
+[Link to website](https://djaruun.github.io/)
