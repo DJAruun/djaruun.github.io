@@ -39,6 +39,7 @@
 -->
 
 <script type="text/javascript" src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!--#region  NAVBAR BUTTONS  -->
 <button class="tablink" style="color: orange;" onclick="openPage('Start', this, 'orange')">
@@ -61,7 +62,7 @@
 
 <button class="tablink" style="color: orangered;" onclick="openPage('About', this, 'orangered')">
   <span class="buttonhover">
-    About
+    About <button onclick="redirPopup()">Replace document</button>
   </span>
 </button>
 
@@ -143,6 +144,8 @@
 
 
 <!--#endregion-->
+
+<button onclick="redirPopup()">Click here to show confirm alert</button>
 
 </body>
 </html>

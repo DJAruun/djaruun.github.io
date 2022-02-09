@@ -1,3 +1,11 @@
+//  MOBILE REDIRECT  POPUP//
+function redirPopup() {
+  var userselection = confirm("You are visiting this website on a mobile device.\n\nWould you like to go to the mobile version of this website?");
+  if (userselection == true){
+    window.location.replace("index2.html");
+  }
+}
+
 //  BACK TO TOP BUTTON  [DISABLED] //
 //Get the button
 var mybutton = document.getElementById("myBtn");
@@ -64,3 +72,4 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+
