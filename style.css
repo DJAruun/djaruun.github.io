@@ -72,8 +72,15 @@ button {
   /*transition: ease-out .05s;*/
 }
 
+@media only screen and (max-width: 600px) {
+  .tablink {
+    width: 100%;
+  }
+}
+
 .tablink:hover {
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, .9);
+  text-decoration: underline;
 }
 
 /* Style the tab content (and add height: 100%; for full page content) */
@@ -150,7 +157,7 @@ button:hover .buttonhover
 }
 
 /*  MOBILE DETECTION AND STUFF  */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
@@ -158,7 +165,7 @@ button:hover .buttonhover
   }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .navbar.responsive {position: fixed;}
   .navbar.responsive .icon {
     position: static;
@@ -234,7 +241,7 @@ button:hover .buttonhover
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .flex-container {
     align-items: center;
     justify-content: center;
