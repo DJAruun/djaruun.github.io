@@ -56,19 +56,19 @@ body, html {
 /* Style tab links */
 .tablink {
   background-color: rgb(28, 28, 28);
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, .5);
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
+  font-size: 16px;
   width: 25%;
-  transition: all ease-out .075s;
+  transition: ease-out .075s;
 }
 
 .tablink:hover {
-  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -78,6 +78,20 @@ body, html {
   padding: 100px 20px;
   height: 100%;
 }
+
+button {
+  height:55px;
+}
+
+.buttonhover {
+  transition: ease-out .075s;
+}
+
+button:hover .buttonhover
+{
+  font-size:17px;
+}
+
 /*#endregion*/
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -218,6 +232,13 @@ body, html {
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+@media (max-width:600px) {
+  .flex-container {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -227,7 +248,6 @@ body, html {
   margin: 10px;
   padding: 20px;
 }
-
 
 .accordion {
   background-color: #eee;
@@ -253,5 +273,6 @@ body, html {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
 
 
