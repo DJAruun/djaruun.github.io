@@ -127,17 +127,12 @@ body, html {
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+/*  MOBILE  */
 @media only screen and (max-width: 600px) {
   .musicBox {
     align-items: center;
     justify-content: center;
   }
-}
-
-.musicBox {
-  display: flex;
-  flex-wrap: wrap;
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -150,6 +145,7 @@ body, html {
   }
 }
 
+/*  COMPUTER  */
 @media only screen and (min-width: 600px) {
   .musicBox > div {
     margin: 10px;
@@ -158,4 +154,14 @@ body, html {
     background-color: rgb(255, 255, 255); 
     border-radius: 15px;
   }
+}
+
+.musicBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+audio {
+  /*width: 42rem;*/
+  width: 100%;
 }
