@@ -96,6 +96,7 @@ body, html {
   font-size: 18px;
   width: 25%;
   border-radius: 0px 0px 10px 10px;
+  transition: ease-out .2s;
 }
 
 .tablink:hover {
