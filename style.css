@@ -66,7 +66,6 @@ p {
 
 .hoverShadow:hover {
   filter: drop-shadow(0 0 11px rgba(33, 33, 33, .4)); 
-  transition: ease-out .1s;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -129,18 +128,34 @@ body, html {
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media only screen and (max-width: 600px) {
-  .flex-container {
+  .musicBox {
     align-items: center;
     justify-content: center;
   }
 }
 
-.flex-container {
+.musicBox {
   display: flex;
   flex-wrap: wrap;
+
 }
 
-.flex-container > div {
-  margin: 10px;
-  padding: 20px;
+@media only screen and (max-width: 600px) {
+  .musicBox > div {
+    margin: 10px;
+    padding: 20px;
+    width: 100%; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .musicBox > div {
+    margin: 10px;
+    padding: 20px;
+    width: fit-content; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 15px;
+  }
 }
