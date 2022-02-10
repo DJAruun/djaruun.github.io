@@ -33,6 +33,12 @@ h2 {
   font-size: 120%;
 }
 
+h3 {
+  margin: 8px; 
+  font-family: "Numans", sans-serif; 
+  font-size: 110%;
+}
+
 /*  PARAGRAPH DEFAULT PROPERTIES  */
 p {
   margin: 8px; 
@@ -60,6 +66,12 @@ p2 {
     font-size: 85%;
   }
 
+  h3 {
+    margin: 8px; 
+    font-family: "Numans", sans-serif; 
+    font-size: 85%;
+  }
+
   /*  PARAGRAPH DEFAULT PROPERTIES  */
   p {
     margin: 6px; 
@@ -82,6 +94,19 @@ p2 {
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+/*  TEXT SELECTION COLOR */
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: rgba(0, 0, 0, .1);
+}
+
+::selection { /* Code for other browsers */
+  color: white;
+  background: rgba(0, 0, 0, .1);
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 /*  FULL PAGE TABS */
 /* Set height of body and the document to 100% */
 @media only screen and (max-width: 600px) {
@@ -97,6 +122,7 @@ body, html {
 }
 
 .tablink {
+  transition: ease-out .2s;
   text-decoration: none;
   background-color: rgb(28, 28, 28);
   color: rgba(255, 255, 255, .5);
@@ -107,8 +133,6 @@ body, html {
   padding: 14px 16px;
   font-size: 18px;
   width: 25%;
-  border-radius: 0px 0px 10px 10px;
-  transition: ease-out .2s;
 }
 
 .tablink:hover {
@@ -123,19 +147,6 @@ body, html {
     padding: 100px 20px;
     height: 100%;
   }
-}
-
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*  TEXT SELECTION COLOR */
-::-moz-selection { /* Code for Firefox */
-  color: white;
-  background: rgba(0, 0, 0, .1);
-}
-
-::selection { /* Code for other browsers */
-  color: white;
-  background: rgba(0, 0, 0, .1);
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -178,6 +189,10 @@ body, html {
   }
 }
 
+#musicBox {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   audio {
     width: 100%;
@@ -187,6 +202,7 @@ body, html {
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .sectionTitle {
+  transition: ease-out .2s;
   margin: 6px; 
   padding: 2px; 
   background-color: rgba(255, 255, 255, .2);
@@ -194,3 +210,8 @@ body, html {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.sectionTitle:hover {
+  background-color: rgba(255, 255, 255, .4);
+}
+

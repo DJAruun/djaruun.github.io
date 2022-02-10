@@ -31,14 +31,12 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-var toggle  = document.getElementById("toggle");
-var content = document.getElementById("content");
-
+//  COLLAPSIBLE SECTION  //
 function musicBox() {
   var x = document.getElementById("musicBox");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  if (x.style.display === "block") {
     x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }
