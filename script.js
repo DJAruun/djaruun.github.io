@@ -31,3 +31,14 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+var toggle  = document.getElementById("toggle");
+var content = document.getElementById("content");
+
+function musicBox() {
+  var x = document.getElementById("musicBox");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

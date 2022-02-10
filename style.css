@@ -29,14 +29,20 @@ h1 {
 /*  HEADER 2 DEFUALT PROPERTIES  */
 h2 {
   margin: 8px; 
-  font-family: "Montserrat", sans-serif; 
-  font-size: 110%;
+  font-family: "Numans", sans-serif; 
+  font-size: 120%;
 }
 
 /*  PARAGRAPH DEFAULT PROPERTIES  */
 p {
   margin: 8px; 
   font-family: "Montserrat", sans-serif;
+}
+
+p2 {
+  margin: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 75%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -50,7 +56,7 @@ p {
   /*  HEADER 2 DEFUALT PROPERTIES  */
   h2 {
     margin: 6px; 
-    font-family: "Montserrat", sans-serif; 
+    font-family: "Numans", sans-serif; 
     font-size: 85%;
   }
 
@@ -58,7 +64,13 @@ p {
   p {
     margin: 6px; 
     font-family: "Montserrat", sans-serif;
-    font-size: 75%;
+    font-size: 95%;
+  }
+
+  p2 {
+    margin: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50%;
   }
 }
 
@@ -118,34 +130,15 @@ body, html {
 /*  TEXT SELECTION COLOR */
 ::-moz-selection { /* Code for Firefox */
   color: white;
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, .1);
 }
 
 ::selection { /* Code for other browsers */
   color: white;
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, .1);
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*  MOBILE  */
-@media only screen and (max-width: 600px) {
-  .musicBox {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .musicBox > div {
-    margin: 10px;
-    padding: 20px;
-    width: 100%; 
-    background-color: rgb(255, 255, 255); 
-    border-radius: 15px;
-    filter: drop-shadow(0 0 4px rgba(33, 33, 33, .4)); 
-    transition: ease-out .2s;
-  }
-}
 
 @media only screen and (min-width: 600px) {
 /*  COMPUTER  */
@@ -156,13 +149,32 @@ body, html {
     flex-wrap: wrap;
   }
   .musicBox > div {
+    transition: ease-out .2s;
     margin: 10px;
     padding: 20px;
     width: fit-content; 
     background-color: rgb(255, 255, 255); 
     border-radius: 15px;
     filter: drop-shadow(0 0 4px rgba(33, 33, 33, .4)); 
+  }
+}
+
+/*  MOBILE  */
+@media only screen and (max-width: 600px) {
+  .musicBox {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .musicBox > div {
     transition: ease-out .2s;
+    margin: 10px;
+    padding: 20px;
+    width: 100%; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 15px;
+    filter: drop-shadow(0 0 4px rgba(33, 33, 33, .4)); 
   }
 }
 
@@ -170,4 +182,15 @@ body, html {
   audio {
     width: 100%;
   }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.sectionTitle {
+  margin: 6px; 
+  padding: 2px; 
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow:0 0 10px 0px rgba(255, 255, 255, .2);
+  border-radius: 4px;
+  cursor: pointer;
 }
