@@ -95,11 +95,11 @@ body, html {
   padding: 14px 16px;
   font-size: 18px;
   width: 25%;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .tablink:hover {
   color: rgba(255, 255, 255, .9);
-  text-decoration: underline;
 }
 
 @media only screen and (min-width: 600px) {
@@ -132,36 +132,41 @@ body, html {
   .musicBox {
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
-}
-
-@media only screen and (max-width: 600px) {
   .musicBox > div {
     margin: 10px;
     padding: 20px;
     width: 100%; 
     background-color: rgb(255, 255, 255); 
     border-radius: 15px;
+    filter: drop-shadow(0 0 4px rgba(33, 33, 33, .4)); 
+    transition: ease-out .2s;
   }
 }
 
-/*  COMPUTER  */
 @media only screen and (min-width: 600px) {
+/*  COMPUTER  */
+  .musicBox {
+    align-items: left;
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+  }
   .musicBox > div {
     margin: 10px;
     padding: 20px;
     width: fit-content; 
     background-color: rgb(255, 255, 255); 
     border-radius: 15px;
+    filter: drop-shadow(0 0 4px rgba(33, 33, 33, .4)); 
+    transition: ease-out .2s;
   }
 }
 
-.musicBox {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-audio {
-  /*width: 42rem;*/
-  width: 100%;
+@media only screen and (max-width: 600px) {
+  audio {
+    width: 100%;
+  }
 }
