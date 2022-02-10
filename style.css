@@ -251,11 +251,17 @@ button:hover .buttonhover
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, .3));
+  transition: ease-out .1s;
 }
 
 .flex-container > div {
   margin: 10px;
   padding: 20px;
+}
+
+.flex-container:hover {
+  filter: drop-shadow(0px 6px 9px rgba(0, 0, 0, .3));
 }
 
 .accordion {
