@@ -23,12 +23,13 @@ body {
 h1 {
   margin: 8px; 
   font-family: "Numans", sans-serif; 
+  font-size: 175%;
 }
 
 /*  HEADER 2 DEFUALT PROPERTIES  */
 h2 {
   margin: 8px; 
-  font-family: "Numans", sans-serif; 
+  font-family: "Montserrat", sans-serif; 
   font-size: 110%;
 }
 
@@ -48,32 +49,31 @@ p {
   }
 }
 
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Numans;
+}
 
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Numans;
-  }
+.tablink {
+  text-decoration: none;
+  background-color: rgb(28, 28, 28);
+  color: rgba(255, 255, 255, .5);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 18px;
+  width: 25%;
+}
 
-  .tablink {
-    text-decoration: none;
-    background-color: rgb(28, 28, 28);
-    color: rgba(255, 255, 255, .5);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 18px;
-    width: 25%;
-    /*transition: ease-out .05s;*/
-  }
+.tablink:hover {
+  color: rgba(255, 255, 255, .9);
+  text-decoration: underline;
+}
 
-  .tablink:hover {
-    color: rgba(255, 255, 255, .9);
-    text-decoration: underline;
-  }
-
+@media only screen and (min-width: 600px) {
   /* Style the tab content (and add height: 100%; for full page content) */
   .tabcontent {
     color: white;
@@ -81,7 +81,7 @@ p {
     padding: 100px 20px;
     height: 100%;
   }
-
+}
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
