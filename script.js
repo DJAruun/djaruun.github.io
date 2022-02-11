@@ -1,4 +1,4 @@
-//  FULL PAGE TABS  //
+//  FULL PAGE TABS  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -31,7 +31,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-//  COLLAPSIBLE SECTION  //
+//  COLLAPSIBLE SECTION  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function musicBox() {
   var x = document.getElementById("musicBox");
   if (x.style.display === "block") {
@@ -41,5 +41,12 @@ function musicBox() {
   }
 }
 
-
+function gamesBox() {
+  var x = document.getElementById("gamesBox");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
