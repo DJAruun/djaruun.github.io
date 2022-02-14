@@ -151,8 +151,8 @@ body, html {
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media only screen and (min-width: 600px) {
 /*  COMPUTER  */
+@media only screen and (min-width: 600px) {
   .musicBox {
     align-items: left;
     justify-content: left;
@@ -162,11 +162,23 @@ body, html {
   .musicBox > div {
     transition: ease-out .2s;
     margin: 10px;
-    padding: 20px;
+    padding: 0px;
     width: fit-content; 
+    height: fit-content;
     background-color: rgb(255, 255, 255); 
     border-radius: 15px;
-    filter: drop-shadow(0 0 4px rgba(33, 33, 33, .4)); 
+    filter: drop-shadow(0 0 4px rgba(33, 33, 33, .4));
+  }
+  audio {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .AlbumArt {
+    border-radius: 15px;
+    width: 300px;
+    padding: 10px;
   }
 }
 
@@ -181,22 +193,28 @@ body, html {
   .musicBox > div {
     transition: ease-out .2s;
     margin: 10px;
-    padding: 20px;
+    padding: 0px;
     width: 100%; 
     background-color: rgb(255, 255, 255); 
     border-radius: 15px;
     filter: drop-shadow(0 0 4px rgba(33, 33, 33, .4)); 
+  }  
+  audio {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .AlbumArt {
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px;
   }
 }
 
 #musicBox {
   display: none;
-}
-
-@media only screen and (max-width: 600px) {
-  audio {
-    width: 100%;
-  }
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -217,6 +235,9 @@ body, html {
 
 .sectionTitle:hover {
   background-color: rgba(255, 255, 255, .3);
-  box-shadow:0 0 10px 0px rgba(255, 255, 255, .5);
+  box-shadow:0 0 10px 0px rgba(255, 255, 255, .4);
 }
 
+#gamesBox {
+  display: none;
+}
