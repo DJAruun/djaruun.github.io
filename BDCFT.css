@@ -57,20 +57,20 @@
   html.theme-dark #app-mount .theme-light .root-g14mjS,
   html.theme-dark .force-theme.theme-light {
     --bg-main: #1a2129;
-    --bg-alt: #1a2129;
-    --bg-content: #1a2129;
-    --bg-content-alt: #1a2129;
-    --bg-interactive: #1a2129;
-    --bg-interactive-high: #1a2129;
-    --bg-interactive-hover: #1a2129;
-    --bg-interactive-high-hover: #1a2129;
-    --bg-high: #1a2129;
-    --bg-higher: #1a2129;
-    --bg-highest: #1a2129;
-    --bg-menu: #1a2129;
-    --bg-menu-item: #1a2129;
-    --bg-menu-item-hover: #1a2129;
-    --chat-bubble-bg: #1a2129;
+    --bg-alt: ##1e262f;
+    --bg-content: #2b2b2b;
+    --bg-content-alt: ##222b35;
+    --bg-interactive: ##222b35;
+    --bg-interactive-high: ##28323e;
+    --bg-interactive-hover: ##202832;
+    --bg-interactive-high-hover: #242d38;
+    --bg-high: #343434;
+    --bg-higher: #3a3a3a;
+    --bg-highest: #484848;
+    --bg-menu: #2c2c2c;
+    --bg-menu-item: #383838;
+    --bg-menu-item-hover: #343434;
+    --chat-bubble-bg: #2f2f2f;
     --chat-mention-bubble: hsl(0 0% 100% / .05);
     --border: #1d1d1d;
     --border-mid: #343434;
