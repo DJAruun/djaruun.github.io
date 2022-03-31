@@ -59,10 +59,10 @@
     --bg-main: #1a2129;
     --bg-alt: ##1e262f;
     --bg-content: #2b2b2b;
-    --bg-content-alt: ##222b35;
-    --bg-interactive: ##222b35;
-    --bg-interactive-high: ##28323e;
-    --bg-interactive-hover: ##202832;
+    --bg-content-alt: #222b35;
+    --bg-interactive: #222b35;
+    --bg-interactive-high: #28323e;
+    --bg-interactive-hover: #202832;
     --bg-interactive-high-hover: #242d38;
     --bg-high: #343434;
     --bg-higher: #3a3a3a;
