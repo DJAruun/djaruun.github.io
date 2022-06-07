@@ -1,10 +1,66 @@
-div {
-    border: 1px solid black;
-    }
-    
-    .resizable-content {
-    min-height: 30px;
-    min-width: 30px;
-    resize: both;
-    overflow: auto;
-    }
+body {
+    background-color: black;
+    text-align: center;
+    padding: 100px;
+}
+
+h {
+    font-size: xxx-large;
+    font-weight: bold;
+    text-shadow: 3px 3px fuchsia;
+    display:inline-block;
+    transform:scale(1.5,1);
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: normal;
+    text-shadow: 2px 2px red;
+    transform: scale(1.125,1);
+}
+
+h3 {
+    font-size: x-large;
+    font-weight: normal;
+    text-shadow: 2px 2px blue;
+    transform: scale(1.25,1);
+}
+
+h4 {
+    font-size: x-large;
+    font-weight: normal;
+    text-shadow: 2px 2px lime;
+    transform: scale(1.2,1);
+}
+
+p {
+    font-size: large;
+    font-weight: normal;
+    /*text-shadow: 1.5px 1.5px rgb(255, 0, 0);*/
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 125%;
+}
+
+/*span.spicy_text {
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: white;
+    text-decoration-thickness: 4px;
+}*/
+
+.row {
+    display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 10px;
+}
+
+.hr3 {
+    border: 0;
+    border-top: 1.5px solid white;
+}
