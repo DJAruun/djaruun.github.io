@@ -4,14 +4,8 @@ body {
     padding: 100px;
 }
 
-@media screen and (max-width: 500px) {
-    body {
-        background-color: lightgreen;
-        padding: 0px;
-    }
-}
-
-h {
+h11 {
+    text-align: center;
     font-size: xxx-large;
     font-weight: bold;
     text-shadow: 3px 3px fuchsia;
@@ -19,32 +13,26 @@ h {
     transform:scale(1.5,1);
 }
 
-h2 {
+h12 {
+    text-align: center;
     font-size: x-large;
     font-weight: normal;
     text-shadow: 2px 2px red;
     transform: scale(1.125,1);
 }
 
-h3 {
+h13 {
+    text-align: center;
     font-size: x-large;
     font-weight: normal;
     text-shadow: 2px 2px blue;
     transform: scale(1.25,1);
 }
 
-h4 {
-    font-size: x-large;
-    font-weight: normal;
-    text-shadow: 2px 2px lime;
-    transform: scale(1.2,1);
-}
-
-p {
+p11 {
+    text-align: center;
     font-size: large;
     font-weight: normal;
-    padding-left: 100px;
-    padding-right: 100px;
     line-height: 150%;
 }
 
@@ -58,15 +46,59 @@ p {
 
 .row {
     display: flex;
+
 }
 
-/* Create two equal columns that sits next to each other */
+@media screen and (max-width: 500px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
 .column {
     flex: 50%;
-    padding: 10px;
+    padding: 10px;    
+}
+
+.embedplayer {
+    width: 440px;
+    height: 250px;
+}
+
+@media screen and (max-width: 500px) {
+    .embedplayer {
+        width: fit-content;
+        height: fit-content;
+    }
 }
 
 .hr3 {
     border: 0;
     border-top: 1.5px solid white;
+}
+
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: lightgreen;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    h11 {
+        font-size: xxx-large;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h13 {
+        font-size: x-large;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    p11 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
