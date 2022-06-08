@@ -1,253 +1,126 @@
-/*  VARIABLES  */
-:root {
-
-
-  
+:root {    
+    --red: #ff0000;
+    --yellow: #ffff00;
+    --green: #00ff00;
+    --aqua: #00ffff;
+    --blue: #0000ff;
+    --magenta: #ff00ff;
+    --black: black;
+    --white: white;
 }
 
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*  OTHER PROPERTIES  */
-* {
-  box-sizing: border-box
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/*  BODY DEFAULT PROPERTIES  */
 body {
-  margin: 0px; 
-  padding: 0px; 
-  background-color: rgb(28, 28, 28); 
-  color: white; 
-  font-size: 24px; 
-  position: relative;
+    background-color: black;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 10px;
 }
 
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*  HEADER 1 DEFAULT PROPERTIES  */
-h1 {
-  margin: 8px; 
-  font-family: "Numans", sans-serif; 
-  font-size: 175%;
+h11 {
+    display: inline-block;
+    top: 20px;
+    font-size: xxx-large;
+    transform:scale(1.5,1);
+    transform-origin: left;
+    font-weight: bold;
+    text-shadow: 2px 2px var(--magenta);
+    color: var(--aqua);
+    position: sticky;
 }
 
-/*  HEADER 2 DEFUALT PROPERTIES  */
-h2 {
-  margin: 8px; 
-  font-family: "Numans", sans-serif; 
-  font-size: 120%;
+h12 {
+    font-size: x-large;
+    display: inline-block;
+    font-weight: normal;
+    text-shadow: 1.5px 1.5px var(--magenta);
+    transform: scale(1.1,1);
+    transform-origin: left;
+    color: var(--white);
+    position: relative;
+    z-index: -1;
 }
 
-h3 {
-  margin: 8px; 
-  font-family: "Numans", sans-serif; 
-  font-size: 110%;
+p11 {
+    color: #e8e6e3;
+    font-size: large;
+    font-weight: normal;
+    line-height: 150%;
 }
 
-/*  PARAGRAPH DEFAULT PROPERTIES  */
-p {
-  margin: 8px; 
-  font-family: "Montserrat", sans-serif;
-}
-
-p2 {
-  margin: 8px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 75%;
-}
-
-@media only screen and (max-width: 600px) {
-  /*  HEADER 1 DEFAULT PROPERTIES  */
-  h1 {
-    margin: 6px; 
-    font-family: "Numans", sans-serif; 
-    font-size: 150%;
-  }
-
-  /*  HEADER 2 DEFUALT PROPERTIES  */
-  h2 {
-    margin: 6px; 
-    font-family: "Numans", sans-serif; 
-    font-size: 85%;
-  }
-
-  h3 {
-    margin: 8px; 
-    font-family: "Numans", sans-serif; 
-    font-size: 85%;
-  }
-
-  /*  PARAGRAPH DEFAULT PROPERTIES  */
-  p {
-    margin: 6px; 
-    font-family: "Montserrat", sans-serif;
-    font-size: 95%;
-  }
-
-  p2 {
-    margin: 8px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 50%;
-  }
-}
-
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-.hoverShadow:hover {
-  filter: drop-shadow(0 0 11px rgba(33, 33, 33, .4)); 
-}
-
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*  TEXT SELECTION COLOR */
-::-moz-selection { /* Code for Firefox */
-  color: white;
-  background: rgba(0, 0, 0, .1);
-}
-
-::selection { /* Code for other browsers */
-  color: white;
-  background: rgba(0, 0, 0, .1);
-}
-
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*  FULL PAGE TABS */
-/* Set height of body and the document to 100% */
-@media only screen and (max-width: 600px) {
-  .tablink {
-    display: none;
-  }
-}
-
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Numans;
-}
-
-.tablink {
-  transition: ease-out .2s;
-  text-decoration: none;
-  background-color: rgb(28, 28, 28);
-  color: rgba(255, 255, 255, .5);
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 18px;
-  width: 25%;
-}
-
-.tablink:hover {
-  color: rgba(255, 255, 255, .9);
-}
-
-@media only screen and (min-width: 600px) {
-  /* Style the tab content (and add height: 100%; for full page content) */
-  .tabcontent {
-    color: white;
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-  }
-}
-
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*  COMPUTER  */
-@media only screen and (min-width: 600px) {
-  .musicBox {
-    align-items: left;
-    justify-content: left;
-    display: flex;
+.row {
     flex-wrap: wrap;
-  }
-  .musicBox > div {
-    transition: ease-out .2s;
-    margin: 10px;
-    padding: 0px;
-    width: fit-content; 
-    height: fit-content;
-    background-color: rgb(255, 255, 255); 
-    border-radius: 15px;
-    filter: drop-shadow(0 0 4px rgba(33, 33, 33, .4));
-  }
-  audio {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .AlbumArt {
-    border-radius: 15px;
-    width: 300px;
-    padding: 10px;
-  }
-}
-
-/*  MOBILE  */
-@media only screen and (max-width: 600px) {
-  .musicBox {
-    align-items: center;
-    justify-content: center;
     display: flex;
-    flex-wrap: wrap;
-  }
-  .musicBox > div {
-    transition: ease-out .2s;
-    margin: 10px;
-    padding: 0px;
-    width: 100%; 
-    background-color: rgb(255, 255, 255); 
-    border-radius: 15px;
-    filter: drop-shadow(0 0 4px rgba(33, 33, 33, .4)); 
-  }  
-  audio {
+}
+
+.column {
+    flex: 50%;
+    padding-top: 50px;    
+}
+
+.embedplayer {
+    width: 440px;
+    height: 250px;
+}
+
+.hr3 {
+    border: 0;
+    border-top: 1.5px solid white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    top: 0px;
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .AlbumArt {
-    border-radius: 15px;
-    width: 100%;
-    padding: 10px;
-  }
 }
 
-#musicBox {
-  display: none;
+@media screen and (max-width: 600px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    h11 {
+        font-size: 11vw;
+    }
+    
+    .embedplayer {
+        width: fit-content;
+        height: fit-content;
+    }
 }
 
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+    }
+    
+    h11 {
+        color: var(--aqua);
+        text-shadow: 2px 2px var(--magenta);
+    }
 
-.sectionTitle {
-  transition: ease-out .2s;
-  margin: 6px; 
-  padding: 2px; 
-  background-color: rgba(255, 255, 255, .2);
-  box-shadow:0 0 10px 0px rgba(255, 255, 255, .2);
-  border-radius: 4px;
-  cursor: pointer;
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
-
-.sectionTitle:hover {
-  background-color: rgba(255, 255, 255, .3);
-  box-shadow:0 0 10px 0px rgba(255, 255, 255, .4);
-}
-
-#gamesBox {
-  display: none;
+    h12 {
+        color: black;
+        text-shadow: 1.5px 1.5px var(--aqua);
+    }
+    
+    p11 {
+        color: #17191c;
+    }
+    ul {
+        background-color: white;
+    }
 }
 
