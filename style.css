@@ -96,9 +96,10 @@ ul {
 .navbar a {
     float: left;
     display: block;
+    padding-left: 0;
     padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-decoration: none;
 }
 
