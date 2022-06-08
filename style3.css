@@ -1,3 +1,12 @@
+:root {    
+    --red: #ff0000;
+    --yellow: #ffff00;
+    --green: #00ff00;
+    --aqua: #00ffff;
+    --blue: #0000ff;
+    --magenta: #ff00ff;
+}
+
 body {
     background-color: black;
     text-align: left;
@@ -14,36 +23,24 @@ h11 {
     transform:scale(1.5,1);
     transform-origin: left;
     font-weight: bold;
-    text-shadow: 3px 3px fuchsia;
+    text-shadow: 3px 3px var(--magenta);
+    color: var(--aqua);
 }
 
 h12 {
     font-size: x-large;
     font-weight: normal;
-    text-shadow: 2px 2px red;
+    text-shadow: 1.5px 1.5px var(--blue);
     transform: scale(1.125,1);
-}
-
-h13 {
-    font-size: x-large;
-    font-weight: normal;
-    text-shadow: 2px 2px blue;
-    transform: scale(1.25,1);
+    color: var(--red);
 }
 
 p11 {
+    color: white;
     font-size: large;
     font-weight: normal;
     line-height: 150%;
 }
-
-/*span.spicy_text {
-    display: inline-block;
-    text-decoration: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: white;
-    text-decoration-thickness: 4px;
-}*/
 
 .row {
     display: flex;
@@ -59,7 +56,6 @@ p11 {
 .column {
     flex: 50%;
     padding-top: 50px;    
-    padding-bottom: 10px; 
 }
 
 .embedplayer {
@@ -67,27 +63,26 @@ p11 {
     height: 250px;
 }
 
-@media screen and (max-width: 500px) {
-    .embedplayer {
-        width: fit-content;
-        height: fit-content;
-    }
-}
-
 .hr3 {
     border: 0;
     border-top: 1.5px solid white;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     body {
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    
     h11 {
         font-size: 11vw;
+    }
+    
+    .embedplayer {
+        width: 100%;
+        height: fit-content;
     }
 }
 
@@ -99,12 +94,18 @@ ul {
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
-    background-color: black;
+    background-color: var(--bg_col);
     position: sticky;
     top: 0px;
     width: 100%;
 }
 
-
-
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+    }
+    p11 {
+        color: black;
+    }
+}
 
