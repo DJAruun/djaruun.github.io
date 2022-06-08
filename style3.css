@@ -25,14 +25,19 @@ h11 {
     font-weight: bold;
     text-shadow: 3px 3px var(--magenta);
     color: var(--aqua);
+    position: sticky;
 }
 
 h12 {
     font-size: x-large;
+    display: inline-block;
     font-weight: normal;
     text-shadow: 1.5px 1.5px var(--blue);
-    transform: scale(1.125,1);
+    transform: scale(1.1,1);
+    transform-origin: left;
     color: var(--red);
+    position: relative;
+    z-index: -1;
 }
 
 p11 {
@@ -81,7 +86,7 @@ p11 {
     }
     
     .embedplayer {
-        width: 100%;
+        width: fit-content;
         height: fit-content;
     }
 }
@@ -94,7 +99,7 @@ ul {
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
-    background-color: var(--bg_col);
+    background-color: black;
     position: sticky;
     top: 0px;
     width: 100%;
@@ -106,6 +111,9 @@ ul {
     }
     p11 {
         color: black;
+    }
+    ul {
+        background-color: white;
     }
 }
 
