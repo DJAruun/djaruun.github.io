@@ -1,19 +1,23 @@
 body {
     background-color: black;
-    text-align: center;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 10px;
 }
 
 h11 {
-    text-align: center;
+    display: inline-block;
+    top: 20px;
     font-size: xxx-large;
+    transform:scale(1.5,1);
+    transform-origin: left;
     font-weight: bold;
     text-shadow: 3px 3px fuchsia;
-    display:inline-block;
-    transform:scale(1.5,1);;
 }
 
 h12 {
-    text-align: center;
     font-size: x-large;
     font-weight: normal;
     text-shadow: 2px 2px red;
@@ -21,7 +25,6 @@ h12 {
 }
 
 h13 {
-    text-align: center;
     font-size: x-large;
     font-weight: normal;
     text-shadow: 2px 2px blue;
@@ -29,7 +32,6 @@ h13 {
 }
 
 p11 {
-    text-align: center;
     font-size: large;
     font-weight: normal;
     line-height: 150%;
@@ -48,16 +50,16 @@ p11 {
 
 }
 
-@media screen and (max-width: 500px) {
-    .row {
-        flex-wrap: wrap;
-        text-align: center;
-    }
+
+.row {
+    flex-wrap: wrap;
 }
+
 
 .column {
     flex: 50%;
-    padding: 10px;    
+    padding-top: 50px;    
+    padding-bottom: 10px; 
 }
 
 .embedplayer {
@@ -79,14 +81,30 @@ p11 {
 
 @media screen and (max-width: 500px) {
     body {
-        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    h11 {
+        font-size: 11vw;
     }
 }
 
-@media screen and (min-width: 500px) {
-    body {
-        padding: 100px;
-    }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    width: 100%;
 }
+
+
 
 
