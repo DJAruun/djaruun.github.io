@@ -52,11 +52,13 @@ p11 {
 .row {
     flex-wrap: wrap;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .column {
     flex: 50%;
-    padding-top: 50px;    
+    padding-top: 50px;   
 }
 
 .embedplayer {
@@ -83,6 +85,24 @@ ul {
     width: 100%;
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+/* MOBILE DEVICES */
 @media screen and (max-width: 600px) {
     body {
         padding-left: 20px;
@@ -101,6 +121,7 @@ ul {
     }
 }
 
+/* LIGHT MODE */
 @media (prefers-color-scheme: light) {
     body {
         background-color: white;
@@ -120,6 +141,15 @@ ul {
         color: #17191c;
     }
     ul {
+        background-color: white;
+    }
+
+    span {
+        color: black;
+        /*font-weight: bold;*/
+    }
+
+    .navbar {
         background-color: white;
     }
 }
