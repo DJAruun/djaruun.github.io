@@ -4,6 +4,13 @@ body {
     padding: 100px;
 }
 
+@media screen and (max-width: 500px) {
+    body {
+        background-color: lightgreen;
+        padding: 0px;
+    }
+}
+
 h {
     font-size: xxx-large;
     font-weight: bold;
@@ -36,7 +43,6 @@ h4 {
 p {
     font-size: large;
     font-weight: normal;
-    /*text-shadow: 1.5px 1.5px rgb(255, 0, 0);*/
     padding-left: 100px;
     padding-right: 100px;
     line-height: 150%;
